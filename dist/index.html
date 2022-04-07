@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand my-3" href="#"><img class="site_logo" src="../img/logo.jpg" alt="logo_img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold my-3 " aria-current="page" href="#">Biz haqimizda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold my-3" href="#">Hankorlarimiz</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active my-3" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Davlatlar
+                </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Amerika</a></li>
+                                <li><a class="dropdown-item" href="#">Dubay</a></li>
+                                <li><a class="dropdown-item" href="#">Turkiya</a></li>
+                                <li><a class="dropdown-item" href="#">Rossiya</a></li>
+                                <li><a class="dropdown-item" href="#">Gavaiy orollari</a></li>
+                                <li><a class="dropdown-item" href="#">Indoniziya</a></li>
+                                <li><a class="dropdown-item" href="#">O'zbekiston</a></li>
+                                <li><a class="dropdown-item" href="#">Qozog'iston</a></li>
+                                <li><a class="dropdown-item" href="#">Tojikiston</a></li>
+                                <li><a class="dropdown-item" href="#">Turkmaniston</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Va boshqalar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Qidiruv" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Qidirish</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="site_main">
+
+
+
+    </main>
+
+
+
+    <script>
+        var name = prompt('Hurmatli mijoz ismingizni kiriting');
+        var summa;
+        alert('Salom ! ' + name + '. Siz qayerga sayohat qilishni istaysiz. Sayohat qilishni istasangiz "OK" tugmasini bosing.');
+        summa = prompt("Mijoz sayohat uchun mo'ljallagan pulingizni kiriiting. Miqdorni $ (dollar)da kiriting:");
+        if (summa >= 10000) {
+            alert('Siz Amerika, BAA, Gavaiy orollariga sayohat qilishingiz mumkin.')
+        } else {
+            if (summa < 10000 && summa >= 5000) {
+                alert('Siz Turkiya, Rossiya, Indoniziya davlatlariga sayohat qilishingiz mumkin.')
+            } else {
+                if (summa < 5000 && summa >= 500) {
+                    alert("Siz Qozog'iston, Turkmaniston, Tojikiston davlatlariga sayohat qilishingiz mumkin.")
+                } else {
+                    if (summa < 500 && summa >= 150) {
+                        alert("Siz O'zbekiston bo'ylab sayohat qilishingiz mumkin.")
+                    } else {
+                        if (summa < 150 && summa >= 0) {
+                            alert('Hurmatli mijoz ' + summa + ' dollarga, siz uchun sayohat joylarini taklif bera olmaymiz.')
+                        } else {
+
+                            alert("Hurmatli mijoz biz qarzga ish olib bormaymiz. Siz noto'ri ma'lumot kirityapsiz.")
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        // alert('salom yaxshimisiz');
+        // confirm('salom');
+        // confirm('uydagilar tinchmi?');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.site_logo {
+    width: 100px;
+    height: 30px;
+    background: #fff;
+}
+
+.site_main {
+    width: 100vw;
+    height: 88vh;
+    background-image: url('../img/bg_desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 992px) {
+    .site_main {
+        width: 100vw;
+        height: 88vh;
+        background-image: url('../img/bg_mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
